@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\img\\about\\04c348d8-709e-4264-b80a-6708dce0fb94_202404091341467807.jpg",
+      "PackagePath": "staticwebassets\\img\\about\\04c348d8-709e-4264-b80a-6708dce0fb94_202404091341467807.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\img\\blog\\c4efada5-148b-4237-b21a-a998b3b7ce39_202404161547494252.jpg",
+      "PackagePath": "staticwebassets\\img\\blog\\c4efada5-148b-4237-b21a-a998b3b7ce39_202404161547494252.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Presentation.props",
+      "PackagePath": "build\\Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Presentation.props",
+      "PackagePath": "buildMultiTargeting\\Presentation.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Presentation.props",
+      "PackagePath": "buildTransitive\\Presentation.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

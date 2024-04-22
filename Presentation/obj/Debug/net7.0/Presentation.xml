@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:Presentation.Controllers.AboutController.CreateAsync(Business.DTOs.About.Request.AboutCreateDto)">
+            <summary>
+            About yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.AboutController.UpdateAsync(System.Int32,Business.DTOs.About.Request.AboutUpdateDto)">
+            <summary>
+            About redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.AboutController.DeleteAsync(System.Int32)">
+            <summary>
+             about silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.AboutController.GetAsync(System.Int32)">
+            <summary>
+             about id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.AboutController.GetAllAsync(System.String)">
+            <summary>
+            about siyahısını götürmək üçün
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.BlogController.CreateAsync(Business.DTOs.Blog.Request.BlogCreateDto)">
+            <summary>
+            blog yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.BlogController.UpdateAsync(System.Int32,Business.DTOs.Blog.Request.BlogUpdateDto)">
+            <summary>
+            Blog redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.BlogController.DeleteAsync(System.Int32)">
+            <summary>
+             blog silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.BlogController.GetAsync(System.Int32)">
+            <summary>
+             blog id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.BlogController.GetAllAsync(System.String)">
+            <summary>
+            blog siyahısını götürmək üçün
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.LocationController.CreateAsync(Business.DTOs.RestaurantLocations.Location.Request.LocationCreateDto)">
+            <summary>
+            Locations yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.LocationController.UpdateAsync(System.Int32,Business.DTOs.RestaurantLocations.Location.Request.LocationUpdateDto)">
+            <summary>
+            Locations redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.LocationController.DeleteAsync(System.Int32)">
+            <summary>
+             Locations silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.LocationController.GetAsync(System.Int32)">
+            <summary>
+             Locations id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.LocationController.GetAllAsync(System.String)">
+            <summary>
+            Locations siyahısını götürmək üçün
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.OpeningHoursController.CreateAsync(Business.DTOs.RestaurantLocations.OpeningHours.Request.OpeningHoursCreateDto)">
+            <summary>
+            OpeningHours yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.OpeningHoursController.UpdateAsync(System.Int32,Business.DTOs.RestaurantLocations.OpeningHours.Request.OpeningHoursUpdateDto)">
+            <summary>
+            OpeningHours redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.OpeningHoursController.DeleteAsync(System.Int32)">
+            <summary>
+             OpeningHours silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.OpeningHoursController.GetAsync(System.Int32)">
+            <summary>
+             OpeningHours id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.OpeningHoursController.GetAllAsync(System.String)">
+            <summary>
+            OpeningHours siyahısını götürmək üçün
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.TagsController.CreateAsync(Business.DTOs.Tag.Request.TagCreateDto)">
+            <summary>
+            Tag yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.TagsController.UpdateAsync(System.Int32,Business.DTOs.Tag.Request.TagUpdateDto)">
+            <summary>
+            Tag redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.TagsController.DeleteAsync(System.Int32)">
+            <summary>
+             tag silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.TagsController.GetAsync(System.Int32)">
+            <summary>
+             tag id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.TagsController.GetAllAsync(System.String)">
+            <summary>
+            tag siyahısını götürmək üçün
+            </summary>
+        </member>
+    </members>
+</doc>

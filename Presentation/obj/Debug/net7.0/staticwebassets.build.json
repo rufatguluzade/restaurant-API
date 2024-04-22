@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "Hash": "bPIc69ScYI/jDeMLos5Y68S383Xf1YO6vxMHnW0UR6s=",
+  "Source": "Presentation",
+  "BasePath": "_content/Presentation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Presentation\\wwwroot",
+      "Source": "Presentation",
+      "ContentRoot": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\img\\about\\04c348d8-709e-4264-b80a-6708dce0fb94_202404091341467807.jpg",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "img/about/04c348d8-709e-4264-b80a-6708dce0fb94_202404091341467807.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\about\\04c348d8-709e-4264-b80a-6708dce0fb94_202404091341467807.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\img\\blog\\c4efada5-148b-4237-b21a-a998b3b7ce39_202404161547494252.jpg",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ROG\\source\\repos\\restaurant\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "img/blog/c4efada5-148b-4237-b21a-a998b3b7ce39_202404161547494252.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\blog\\c4efada5-148b-4237-b21a-a998b3b7ce39_202404161547494252.jpg"
+    }
+  ]
+}
