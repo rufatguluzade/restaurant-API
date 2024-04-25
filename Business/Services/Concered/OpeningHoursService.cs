@@ -75,24 +75,30 @@ namespace Business.Services.Concered
         }
 
         public  async Task<Response<List<OpeningHoursResponseDto>>> GetAllAsync(string? search)
-        {
-            var openingHours= await _openingHoursRepository.GetFiltered(
-            b => search != null ? b.OpeningTime.ToString().Contains(search) : true,
-            isTracking: false,
-            includes: new[] { "OpeningHours.Locations" }
-        ).ToListAsync();
 
-            if (openingHours is null)
-            {
+        { 
 
-                throw new NotFoundException("Hec bir time tapilmadi");
-            }
 
-            return new Response<List<OpeningHoursResponseDto>>
-            {
-                Data = _mapper.Map<List<OpeningHoursResponseDto>>(openingHours),
-                Message = "data ugurla getirildi"
-            };
+
+                var openingHours = await _openingHoursRepository.GetFiltered(
+      b => search != null ? b.DayOfWeek.ToString().Contains(search) : true,
+      isTracking: false,
+      includes: new[] { "OpeningHours.Locations" }
+  ).ToListAsync();
+
+
+                if (openingHours is null)
+                {
+
+                    throw new NotFoundException("Hec bir time tapilmadi");
+                }
+                return new Response<List<OpeningHoursResponseDto>>
+                {
+                    Data = _mapper.Map<List<OpeningHoursResponseDto>>(openingHours),
+                    Message = "data ugurla getirildi"
+                };
+       
+
 
         }
 

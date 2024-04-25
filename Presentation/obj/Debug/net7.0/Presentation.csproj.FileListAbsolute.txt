@@ -1,3 +1,9 @@
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.csproj.AssemblyReference.cache
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfoInputs.cache
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfo.cs
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.csproj.CoreCompileInputs.cache
+C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\appsettings.json
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\Presentation.staticwebassets.runtime.json
@@ -259,13 +265,6 @@ C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\DataAccess.dl
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\Business.pdb
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\DataAccess.pdb
 C:\Users\ROG\source\repos\restaurant\Presentation\bin\Debug\net7.0\Common.pdb
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.csproj.AssemblyReference.cache
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfoInputs.cache
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.AssemblyInfo.cs
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.csproj.CoreCompileInputs.cache
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\Presentation.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\staticwebassets\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\staticwebassets\msbuild.build.Presentation.props
 C:\Users\ROG\source\repos\restaurant\Presentation\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Presentation.props

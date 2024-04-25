@@ -16,7 +16,6 @@ namespace Business.DTOs.RestaurantLocations.OpeningHours.Response
         public TimeSpan ClosingTime { get; set; }
 
 
-        public List<Locations> Locations { get; set; }
 
     }
 }

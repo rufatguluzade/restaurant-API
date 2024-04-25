@@ -17,7 +17,7 @@ namespace Business.MappingProfiles
             CreateMap<OpeningHoursCreateDto , OpeningHours>().ReverseMap();
             CreateMap<OpeningHoursUpdateDto, OpeningHours>().ReverseMap();
 
-            CreateMap<OpeningHours , OpeningHoursResponseDto>().ForMember(dest => dest.Locations, opt => opt.MapFrom(src => src.Locations)).ReverseMap();
+            CreateMap<OpeningHours , OpeningHoursResponseDto>().ReverseMap();
 
 
         }

@@ -21,6 +21,11 @@ namespace DataAccess.Context
         DbSet<BlogTag> BlogTags { get; set; }
         DbSet<Locations> Locations { get; set; }
         DbSet<OpeningHours> OpeningHours { get; set; }
+        DbSet<Menu> Menus { get; set; }
+        DbSet<SubMenu> SubMenus { get; set; }
+        DbSet<Product> Products { get; set; }
+
+     
 
      
     }
