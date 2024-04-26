@@ -91,7 +91,7 @@ namespace Presentation.Controllers
         /// </summary>
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<List<MenuResponseDto>>))]
         #endregion
-        [HttpGet()]
+        [HttpGet("GetAll")]
         public async Task<Response<List<MenuResponseDto>>> GetAllAsync([FromQuery] string? search)
         {
             return await _menuService.GetAllAsync(search);

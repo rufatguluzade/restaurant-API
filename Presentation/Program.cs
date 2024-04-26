@@ -161,6 +161,10 @@ builder.Services.AddScoped<ITagRepository , TagRepository>();
 builder.Services.AddScoped<IBlogRepository, BlogRepository>();
 builder.Services.AddScoped<IOpeningHoursRepository , OpeningHoursRepository>();
 builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+builder.Services.AddScoped<IMenuRepository, MenuRepository>();
+builder.Services.AddScoped<ISubMenuRepository, SubMenuRepository>();
+
+
 #endregion
 
 
@@ -179,6 +183,9 @@ builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IOpeningHoursService, OpeningHoursService>();
 builder.Services.AddScoped<ILocationService, LocationService>();
+builder.Services.AddScoped<ISubMenuService, SubMenuService>();
+builder.Services.AddScoped<IMenuService, MenuService>();
+
 #endregion
 
 
@@ -193,7 +200,10 @@ builder.Services.AddAutoMapper(x =>
     x.AddProfile<BlogMappingProfile>();
     x.AddProfile<OpeningHoursMappingProfile>();
     x.AddProfile<LocationsMappingProfile>();
-    
+    x.AddProfile<MenuMappingProfile>();
+    x.AddProfile<SubMenuMappingProfile>();
+
+
 });
 #endregion
 

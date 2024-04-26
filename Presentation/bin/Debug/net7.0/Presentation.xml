@@ -91,6 +91,35 @@
             Locations siyahısını götürmək üçün
             </summary>
         </member>
+        <member name="M:Presentation.Controllers.MenuController.CreateAsync(Business.DTOs.Menu.Request.MenuCreateDto)">
+            <summary>
+            Menu yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.MenuController.UpdateAsync(System.Int32,Business.DTOs.Menu.Request.MenuUpdateDto)">
+            <summary>
+            Menu redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.MenuController.DeleteAsync(System.Int32)">
+            <summary>
+             Menu silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.MenuController.GetAsync(System.Int32)">
+            <summary>
+             Menu id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.MenuController.GetAllAsync(System.String)">
+            <summary>
+            Menu siyahısını götürmək üçün
+            </summary>
+        </member>
         <member name="M:Presentation.Controllers.OpeningHoursController.CreateAsync(Business.DTOs.RestaurantLocations.OpeningHours.Request.OpeningHoursCreateDto)">
             <summary>
             OpeningHours yaradılması üçün
@@ -118,6 +147,35 @@
         <member name="M:Presentation.Controllers.OpeningHoursController.GetAllAsync(System.String)">
             <summary>
             OpeningHours siyahısını götürmək üçün
+            </summary>
+        </member>
+        <member name="M:Presentation.Controllers.SubSubMenuController.CreateAsync(Business.DTOs.SubMenu.Request.SubMenuCreateDto)">
+            <summary>
+            SubMenu yaradılması üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.SubSubMenuController.UpdateAsync(System.Int32,Business.DTOs.SubMenu.Request.SubMenuUpdateDto)">
+            <summary>
+            SubMenu redakte etmek üçün
+            </summary>
+            <param name="model"></param>
+        </member>
+        <member name="M:Presentation.Controllers.SubSubMenuController.DeleteAsync(System.Int32)">
+            <summary>
+             SubMenu silinməsi
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.SubSubMenuController.GetAsync(System.Int32)">
+            <summary>
+             SubMenu id parametrinə görə götürülməsi üçün
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Presentation.Controllers.SubSubMenuController.GetAllAsync(System.String)">
+            <summary>
+            SubMenu siyahısını götürmək üçün
             </summary>
         </member>
         <member name="M:Presentation.Controllers.TagsController.CreateAsync(Business.DTOs.Tag.Request.TagCreateDto)">
