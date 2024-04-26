@@ -17,8 +17,7 @@ namespace Business.Validators.SubMenu
                .WithMessage("Ad daxil edilmelidir")
                .MaximumLength(500)
                .WithMessage("Max length 500")
-               .MinimumLength(20)
-               .WithMessage("minimum length 20");
+;
 
 
 

@@ -15,8 +15,7 @@ namespace Business.Validators.Menu
         {
             RuleFor(x => x.Name)
                 .NotEmpty()
-                .WithMessage("Name qeyd olunmalidir")
-                .MaximumLength(30);
+                .WithMessage("Name qeyd olunmalidir");
         }
     }
 }
