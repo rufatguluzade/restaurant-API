@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Business.DTOs.Menu.Response;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace Business.DTOs.SubMenu.Response
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+      
 
     }
 }

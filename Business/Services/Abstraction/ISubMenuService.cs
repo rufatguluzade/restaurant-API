@@ -17,6 +17,6 @@ namespace Business.Services.Abstraction
         Task<Response> UpdateAsync(int id, SubMenuUpdateDto model);
         Task<Response> DeleteAsync(int id);
         Task<Response<SubMenuResponseDto>> GetAsync(int id);
-        Task<Response<List<SubMenuResponseDto>>> GetAllAsync(string? search);
+        Task<Response<List<SubMenuGetMenuResponseDto>>> GetAllAsync(string? search);
     }
 }

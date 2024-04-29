@@ -37,13 +37,18 @@ namespace Business.Services.Concered
             {
                 throw new ValidationException(result.Errors);
             }
+            if (await _subMenuRepository.IsExistAsync(m => m.Name == model.Name))
+            {
+                throw new ValidationException("bu adda menu movcuddur");
+            }
 
             var subMenu = _mapper.Map<SubMenu>(model);
 
             if (!await _menuRepository.IsExistAsync(x=> x.Id == model.MenuId))
             {
-                throw new ValidationException("gelen menu yalnisdir");
+                throw new ValidationException("gelen submenu yalnisdir");
             }
+        
 
             await _subMenuRepository.CreateAsync(subMenu);
             await _unitOfWork.CommitAsync();
@@ -65,12 +70,37 @@ namespace Business.Services.Concered
             };
         }
 
-        public async Task<Response<List<SubMenuResponseDto>>> GetAllAsync(string? search)
+        public async Task<Response<List<SubMenuGetMenuResponseDto>>> GetAllAsync(string? search)
         {
+            try
+            {
+                var subMenuss = await _subMenuRepository.GetFiltered(
+b => search != null ? b.Name.Contains(search) : true,
+isTracking: false
+, includes: new[] { "Menu" }
+).ToListAsync();
+
+                if (subMenuss is null)
+                {
+
+                    throw new NotFoundException("Hec bir subMenus tapilmadi");
+                }
+
+                return new Response<List<SubMenuGetMenuResponseDto>>
+                {
+                    Data = _mapper.Map<List<SubMenuGetMenuResponseDto>>(subMenuss),
+                    Message = "data ugurla getirildi"
+                };
+            }
+            catch (Exception e)
+            {
+
+                int a = 1 + 2;
+            }
             var subMenus = await _subMenuRepository.GetFiltered(
         b => search != null ? b.Name.Contains(search) : true,
         isTracking: false
-    //,includes: new[] { "Locations.OpeningHours" }
+   ,includes: new[] { "Menu" }
     ).ToListAsync();
 
             if (subMenus is null)
@@ -79,12 +109,11 @@ namespace Business.Services.Concered
                 throw new NotFoundException("Hec bir subMenus tapilmadi");
             }
 
-            return new Response<List<SubMenuResponseDto>>
+            return new Response<List<SubMenuGetMenuResponseDto>>
             {
-                Data = _mapper.Map<List<SubMenuResponseDto>>(subMenus),
+                Data = _mapper.Map<List<SubMenuGetMenuResponseDto>>(subMenus),
                 Message = "data ugurla getirildi"
             };
-
 
         }
 
@@ -115,6 +144,10 @@ namespace Business.Services.Concered
             if (existSubMenu is null)
             {
                 throw new NotFoundException("submenu tapilmadi");
+            }
+            if (await _subMenuRepository.IsExistAsync(m => m.Name == existSubMenu.Name))
+            {
+                throw new ValidationException("bu adda submenu movcuddur");
             }
 
             _mapper.Map(model, existSubMenu);

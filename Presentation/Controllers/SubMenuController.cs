@@ -92,7 +92,7 @@ namespace Presentation.Controllers
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response<List<SubMenuResponseDto>>))]
         #endregion
         [HttpGet("GetAll")]
-        public async Task<Response<List<SubMenuResponseDto>>> GetAllAsync([FromQuery] string? search)
+        public async Task<Response<List<SubMenuGetMenuResponseDto>>> GetAllAsync([FromQuery] string? search)
         {
             return await _subMenuService.GetAllAsync(search);
         }

@@ -6,10 +6,9 @@ using Business.Exceptions;
 using Business.Services.Abstraction;
 using Business.Validators.Tag;
 using Common.Entities;
-using DataAccess.AboutRepository.Concrete;
 using DataAccess.Repositories.Abstract;
+using DataAccess.Repositories.Concrete;
 using DataAccess.UnitOfWork;
-using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -36,7 +35,11 @@ namespace Business.Services.Concered
 
             if (!result.IsValid)
             {
-                throw new Exceptions.ValidationException(result.Errors);
+                throw new ValidationException(result.Errors);
+            }
+            if (await _tagRepository.IsExistAsync(m => m.Name == model.Name))
+            {
+                throw new ValidationException("bu tag menu movcuddur");
             }
 
             var tag = _mapper.Map<Tag>(model);
@@ -116,6 +119,11 @@ namespace Business.Services.Concered
             }
 
             var existTag = await _tagRepository.GetAsync(id);
+
+            if (await _tagRepository.IsExistAsync(m => m.Name == model.Name))
+            {
+                throw new ValidationException("bu adda tag movcuddur");
+            }
 
             if (existTag is null)
             {

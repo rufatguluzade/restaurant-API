@@ -87,15 +87,44 @@ namespace Business.Services.Concered
 
         public async Task<Response<List<ProductResponseDto>>> GetAllAsync(string? search)
         {
+
+            try
+            {
+
+
+
+                var productss = await _productRepository.GetFiltered(
+b => search != null ? b.Name.Contains(search) : true,
+isTracking: false,
+includes: new[] { "SubMenu" }
+).ToListAsync();
+
+                if (productss is null)
+                {
+                    throw new NotFoundException("product tapilmadi");
+                }
+
+
+                return new Response<List<ProductResponseDto>>
+                {
+                    Data = _mapper.Map<List<ProductResponseDto>>(productss),
+                    Message = "ugurlu alindi"
+                };
+
+
+
+            }
+            catch (Exception e)
+            {
+
+                int a = 32 + 2;
+            }
+
             var products = await _productRepository.GetFiltered(
-             b => search != null ? b.Name.Contains(search) : true,
-             isTracking: false,
-             includes: new[] { "SubMenu" }
-         ).ToListAsync();
-
-
-
-
+      b => search != null ? b.Name.Contains(search) : true,
+      isTracking: false,
+      includes: new[] { "SubMenu" }
+  ).ToListAsync();
 
             if (products is null)
             {
@@ -108,6 +137,7 @@ namespace Business.Services.Concered
                 Data = _mapper.Map<List<ProductResponseDto>>(products),
                 Message = "ugurlu alindi"
             };
+
         }
 
         public async Task<Response<ProductResponseDto>> GetAsync(int id)

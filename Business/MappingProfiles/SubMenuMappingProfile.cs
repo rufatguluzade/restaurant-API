@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Business.DTOs.Menu.Response;
 using Business.DTOs.SubMenu.Request;
 using Business.DTOs.SubMenu.Response;
 using Common.Entities;
@@ -17,7 +18,11 @@ namespace Business.MappingProfiles
         {
             CreateMap<SubMenuCreateDto, SubMenu>().ReverseMap();
             CreateMap<SubMenuUpdateDto, SubMenu>().ReverseMap();
-            CreateMap<SubMenu , SubMenuResponseDto>().ReverseMap(); 
+            CreateMap<SubMenu , SubMenuResponseDto>().ReverseMap();
+
+
+           CreateMap<SubMenu,SubMenuGetMenuResponseDto>().ReverseMap();
+
 
         }
     }
